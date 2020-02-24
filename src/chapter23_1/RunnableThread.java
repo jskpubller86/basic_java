@@ -18,7 +18,7 @@ class AddrThread extends Sum implements Runnable
     }
     /* Thread 클래스를 상속할 때와 마찬가지로 run 메소드를 통해 쓰레드 생성 */
     public void run() {
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
             addNum(i);
             System.out.println(i);
         }
